@@ -40,6 +40,6 @@ RUN \
 ENV TZ America/Los_Angeles
 RUN ln -snf /usr/share/timezone/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-CMD ["/bin/bash"]
+CMD ["R"]
 
 
