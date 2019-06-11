@@ -58,7 +58,7 @@
 ##### Copy here the contents of the bat file
     nano runsetasNew.sh
 
-##### Run
+##### Run. Note: do not use sudo within a Docker container
     flip -uv *; chmod +x runsetasNew.sh; sh ./runsetasNew.sh
 
 ##### Some useful Docker commands
