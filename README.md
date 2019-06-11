@@ -49,7 +49,17 @@
     svn co -r 6356 https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk --username <USERNAME> --password <PASSWORD> --quiet
 
 #### Build Atlantis
-    cd trunk/atlantis; aclocal; autoheader; autoconf; automake -a; ./configure; make CFLAGS='-Wno-misleading-indentation -Wno-format -Wno-implicit-fallthrough'; make -d install
+    cd trunk/atlantis; aclocal; autoheader; autoconf; automake -a; ./configure; make CFLAGS='-Wno-misleading-indentation -Wno-format -Wno-implicit-fallthrough'; make -d install    
+    
+#### Run Atlantis
+##### You can try running the SETAS model example that installs with Atlantis to test the container
+    cd /trunk/example
+
+##### Copy here the contents of the bat file
+    nano runsetasNew.sh
+
+##### Run
+flip -uv *; chmod +x runsetasNew.sh; sh ./runsetasNew.sh
 
 ##### Some useful Docker commands
 ###### To restart existing container
