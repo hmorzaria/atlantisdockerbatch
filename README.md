@@ -28,7 +28,7 @@ sudo systemctl status docker
 #ps://techoverflow.net/2017/03/01/solving-docker-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/
 sudo usermod -a -G docker $USER
 
-##### Pull an existing image from Dockerhub and run as a new container
+#### Pull an existing image from Dockerhub and run as a new container
 sudo docker pull hmorzaria/atlantisdockerbatch
 
 ##### Run the container, susbtitute NAME for whatever name you want the image to have on your computer
@@ -40,7 +40,7 @@ docker ps -a
 ##### Then enter the container from Bash, substitute container ID for result of docker ps command above
 docker exec -it <container ID> bash
 
-##### Install Atlantis in the container
+#### Install Atlantis in the container
 
 ##### Get code from CSIRO SVN, if need to change version use -r 6356 for example, substitute USERNAME and PASSWORD for your Confluence username and password
 
