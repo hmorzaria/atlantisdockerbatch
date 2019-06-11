@@ -2,6 +2,7 @@ FROM rocker/r-ver:latest
 MAINTAINER hmorzaria@hotmail.com
 # Install minimum requirements
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
+    subversion \
     gdebi-core \
     gdal-bin \
     libcairo2 \
