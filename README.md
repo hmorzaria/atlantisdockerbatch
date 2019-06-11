@@ -1,6 +1,6 @@
 # atlantisdockerbatch
 ## Docker for Atlantis
-### This Docker provides a base container that has the libraries and dependencies to run R and Atlantis.
+### This Docker provides a base container that has the libraries and dependencies needed to run R and Atlantis
 #### Docker can be installed directly on Linux. Windows and MacOS users will need VirtualBox https://www.virtualbox.org/. 
 #### These instructions assume you are running Ubuntu 18.04 (Bionic) as an OS.
 
@@ -33,7 +33,7 @@
 #### Pull an existing image from Dockerhub and run as a new container
     sudo docker pull hmorzaria/atlantisdockerbatch
 
-##### Run the container, susbtitute NAME for whatever name you want the image to have on your computer
+##### Run the container, susbtitute NAME for whatever name you want the container to have
     sudo docker run -it -d --name <NAME> -v $HOME:/home/atlantis hmorzaria/atlantisdockerbatch:latest
 
 ##### Show containers, running and not, get Container ID
@@ -51,10 +51,13 @@
 #### Build Atlantis
     cd trunk/atlantis; aclocal; autoheader; autoconf; automake -a; ./configure; make CFLAGS='-Wno-misleading-indentation -Wno-format -Wno-implicit-fallthrough'; make -d install
 
-##### Other useful Docker commands
+##### Some useful Docker commands
 ###### To restart existing container
     docker start <container ID> 
 
 ###### to stop a container
     docker stop <containerID> 
+    
+###### to list images
+    docker images 
 
