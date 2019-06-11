@@ -27,7 +27,7 @@
     sudo systemctl status docker
 
 ##### If daemon returns error then run this command then close server session or SSH session and reconnect/restart
-#ps://techoverflow.net/2017/03/01/solving-docker-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/
+    ps://techoverflow.net/2017/03/01/solving-docker-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/
     sudo usermod -a -G docker $USER
 
 #### Pull an existing image from Dockerhub and run as a new container
