@@ -59,15 +59,16 @@
     nano runsetasNew.sh
 
 ##### Run
-flip -uv *; chmod +x runsetasNew.sh; sh ./runsetasNew.sh
+    flip -uv *; chmod +x runsetasNew.sh; sh ./runsetasNew.sh
 
 ##### Some useful Docker commands
+
 ###### To restart existing container
     docker start <container ID> 
 
-###### to stop a container
+###### To stop a container
     docker stop <containerID> 
     
-###### to list images
+###### To list images
     docker images 
 
