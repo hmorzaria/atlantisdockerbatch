@@ -1,8 +1,10 @@
 # atlantisdockerbatch
-## Docker file for atlantis for batch processes
-### These isntructions assume you are running Ubuntu 18.04 (Bionic)
+## Docker for Atlantis
+### This Docker provides a base container that has the libraries and dependencies to run R and Atlantis.
+#### Docker can be installed directly on Linux. Windows and MacOS users will need VirtualBox https://www.virtualbox.org/. 
+#### These instructions assume you are running Ubuntu 18.04 (Bionic) as an OS.
 
-### To install docker
+### To install Docker
 ##### Install a few prerequisite packages which let apt use packages over HTTPS:
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 
@@ -18,7 +20,7 @@ sudo apt update
 ##### Install from the Docker repo instead of the default Ubuntu repo:
 apt-cache policy docker-ce
 
-##### install Docker
+##### Install Docker
 sudo apt install -y docker-ce
 
 ##### Check that the Docker daemon started
@@ -46,7 +48,7 @@ docker exec -it <container ID> bash
 
 svn co -r 6356 https://svnserv.csiro.au/svn/ext/atlantis/Atlantis/trunk --username <USERNAME> --password <PASSWORD> --quiet
 
-##### Build Atlantis
+#### Build Atlantis
 cd trunk/atlantis; aclocal; autoheader; autoconf; automake -a; ./configure; make CFLAGS='-Wno-misleading-indentation -Wno-format -Wno-implicit-fallthrough'; make -d install
 
 ##### Other useful Docker commands
