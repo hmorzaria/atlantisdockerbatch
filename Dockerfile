@@ -11,6 +11,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     libhdf5-dev \
     libnetcdf-dev \
     libgdal-dev \
+    libssl-dev \
     libudunits2-dev \
     libxml2-dev \
     libproj-dev \
